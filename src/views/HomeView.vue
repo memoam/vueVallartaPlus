@@ -15,7 +15,7 @@
           />
         </div>
       </div>
-      <div class="tours">
+      <div v-else class="tours">
         <h1>Cargando...</h1>
       </div>
     </div>
