@@ -56,7 +56,6 @@
 <style scoped lang="scss">
 .textBubbleCom {
   display: flex;
-  // flex-direction: row-reverse;
   align-content: center;
   justify-content: space-between;
   width: 100%;
@@ -76,8 +75,6 @@
     }
     button{
       padding: 0.5em;
-      // border: none;
-      // position: relative;
     }
     &_details{
       margin-right:0.5em ;
@@ -102,7 +99,6 @@
     flex-direction: column;
     justify-content: space-around;
     width: 45%;
-    // height: fit-content;
     border-top: none;
     border-left: none;
     @media (max-width: 1050px) {

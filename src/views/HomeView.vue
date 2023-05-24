@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="main">
-      <div class="tours">
+      <div class="tours" v-if="tours.length > 0">
         <div v-for="tour in tours" v-bind:key="tour.id" class="tours__details">
           <TextBubbleCom
             class="tours__summary"
@@ -14,6 +14,9 @@
             v-bind:pricing="tour.pricing"
           />
         </div>
+      </div>
+      <div class="tours">
+        <h1>Cargando...</h1>
       </div>
     </div>
   </div>
@@ -33,7 +36,6 @@
 </style>
 <script>
 // @ is an alias to /src
-// import aux from '@/assets/aux';
 import TextBubbleCom from '@/components/TextBubbleCom.vue';
 import getEventService from '@/services/eventServices';
 
