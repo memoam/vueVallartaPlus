@@ -41,7 +41,7 @@ export default {
 }
 .container {
   min-height: 100vh;
-  padding: 5em;
+  padding-top: 5em;
 }
 
 .main {
@@ -50,9 +50,12 @@ export default {
   align-items: center;
   justify-content: flex-start;
   max-width: 80%;
-  margin: 0 auto 8em;
+  margin: 0 auto;
   height: 100%;
   min-height: 85vh;
+  @media (max-width: 1215px) {
+    max-width: 90%;
+  }
 }
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -95,12 +98,15 @@ a {
 p {
   font-size: 16px;
   font-weight: 500;
+  padding: 0;
+  margin: 0;
+  margin-top: 0.5em;
+  text-align: justify;
 }
 button {
   font-size: 16px;
   -webkit-appearance: none;
-  color: #fff;
-  background: #3f3630;
+  background: #fff;
   font-weight: 600;
   text-align: center;
   flex-shrink: 0;
